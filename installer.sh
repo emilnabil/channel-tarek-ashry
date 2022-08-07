@@ -81,12 +81,12 @@ esac
 
 #########################
 rm -rf ${ASTRACONF} ${SYSCONF}
-rm -rf ${TMPDIR}/channels_backup_by_tarek-ashry.tar.gz"* astra-* bbc_pmt_v6*
+rm -rf ${TMPDIR}/channels_backup_by_"* astra-* bbc_pmt_v6*
 
 #########################
 echo
 set -e
-echo "Downloading And Insallling Channel Please Wait ......"
+echo "Downloading And Insalling Channel Please Wait ......"
 wget $MY_URL/channels_backup_by_tarek-ashry.tar.gz -qP $TMPDIR
 tar -zxf $TMPDIR/channels_backup_by_tarek-ashry.tar.gz -C /
 sleep 5
@@ -103,7 +103,7 @@ if [ -f $BBCPMT ] && [ -f $BBCPY ] && [ -f $BBCENIGMA ]; then
     sleep 2
 else
     set -e
-    echo "Downloading And Insallling Config BBC Please Wait ......"
+    echo "Downloading And Insalling Config BBC Please Wait ......"
     wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
     tar -xzf $TMPDIR/bbc_pmt_v6.tar.gz -C $TMPDIR
     set +e
@@ -135,7 +135,6 @@ if [ $OSTYPE = "Opensource" ]; then
         echo "Downloading Config $PACKAGE Please Wait ......"
         wget $MY_URL/astra-"${plarform}".tar.gz -qP $TMPDIR
         tar -xzf $TMPDIR/astra-"${plarform}".tar.gz -C $TMPDIR
-        mv $TMPDIR/astra-"${plarform}" $TMPDIR/${PACKAGE}
         set +e
         chmod -R 755 ${TMPDIR}/${PACKAGE}
         sleep 1
@@ -182,6 +181,7 @@ else
 fi
 
 exit 0
+
 
 
 
