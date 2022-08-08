@@ -72,13 +72,9 @@ sleep 2
 echo
 
 #########################
-if [ -f $BBCPMT ] && [ -f $BBCPY ] && [ -f $BBCENIGMA ]; then
-    echo "   >>>>   All Config BBC Files found   <<<<"
     sleep 2
-else
     set -e
-    echo "Downloading And Insalling Config BBC Please Wait ......"
- if which dpkg > /dev/null 2>&1; then
+    echo "Downloading And Insalling Config BBC Please wait "
     wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
     tar -xzf $TMPDIR/bbc_pmt_v6.tar.gz -C
     set +e
@@ -90,12 +86,12 @@ chmod -R 755 $BINPATH/enigma2_pre_start.sh
     echo "---------------------------------------------"
 #########################
 if [ $OSTYPE = "Opensource" ]; then
-  wget $MY_URL/astra-mips.tar.gz -qP $TMPDIR
- tar -xzf $TMPDIR/astra-mips.tar.gz -C
- else
- wget $MY_URL/astra-arm.tar.gz -qp 
-$TMPDIR
+  wget $MY_URL/astra-arm.tar.gz -qP $TMPDIR
  tar -xzf $TMPDIR/astra-arm.tar.gz -C
+ else
+ wget $MY_URL/astra-mips.tar.gz -qp 
+$TMPDIR
+ tar -xzf $TMPDIR/astra-mips.tar.gz -C
         set +e
         chmod -R 755 $ASTRAPATH/*
         sleep 1
@@ -104,7 +100,7 @@ $TMPDIR
         
   echo "---------------------------------------------"
 #########################
-rm -rf ${TMPDIR}/*.tar.gz
+rm -rf ${TMPDIR}/*.tar
 sync
 echo ""
 echo ""
@@ -126,6 +122,8 @@ else
 fi
 
 exit 0
+
+
 
 
 
