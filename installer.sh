@@ -60,11 +60,6 @@ rm -rf /etc/tuxbox/*.xml
 ########################
 ########################
 #########################
-rm -rf $ASTRAPATH
-rm -f $BINPATH/bbc_pmt_starter.sh
-rm -f $BINPATH/bbc_pmt_v6.py
-rm -f $BINPATH/enigma2_pre_start.sh
-########BINPATH#################
 echo
 set -e
 echo "Downloading And Insalling Channel Please Wait ......"
@@ -76,11 +71,6 @@ echo
 echo "   >>>>   Reloading Services - Please Wait   <<<<"
 wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 >/dev/null 2>&1
 sleep 2
-echo
-echo "Downloading And Insalling Config BBC Please wait "
-wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
-wait
-tar -xzf /tmp/bbc_pmt_v6.tar.gz -C /
 wait
 echo "---------------------------------------------"
 if [ $OSTYPE = "Opensource" ]; then
