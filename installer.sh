@@ -9,17 +9,15 @@
 
 ###########################################
 # Configure where we can find things here #
+VERSION='2022-08-07'
 TMPDIR='/tmp'
-PACKAGE='astra-sm'
+PACKAGE='channels_backup_by_tarek-ashry'
 MY_URL='https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main'
 
 ########################
-VERSION=$(wget $MY_URL/version -qO- | cut -d "=" -f2-)
-
 ########################
 BINPATH=/usr/bin
 ETCPATH=/etc
-ASTRAPATH=${ETCPATH}/astra
 ######
 BBCPMT=${BINPATH}/bbc_pmt_starter.sh
 BBCPY=${BINPATH}/bbc_pmt_v6.py
@@ -44,7 +42,7 @@ if [ -f /etc/opkg/opkg.conf ]; then
     OPKG='opkg update'
     OPKGINSTAL='opkg install'
 fi
-
+echo " remove old channel "
 ########################
 rm -rf /etc/enigma2/lamedb
 rm -rf /etc/enigma2/*list
@@ -53,43 +51,19 @@ rm -rf /etc/enigma2/*.radio
 rm -rf /etc/tuxbox/*.xml
 
 ########################
-install() {
-    if grep -qs "Package: $1" $STATUS; then
-        echo
-    else
-        $OPKG >/dev/null 2>&1
-        echo "   >>>>   Need to install $1   <<<<"
-        echo
-        $OPKGINSTAL "$1"
-        sleep 1
-        clear
-    fi
-}
-
 ########################
-if [ $OSTYPE = "Opensource" ]; then
-    for i in dvbsnoop $PACKAGE; do
-        install $i
-    done
-fi
-
 #########################
-case $(uname -m) in
-armv7l*) plarform="arm" ;;
-mips*) plarform="mips" ;;
-esac
-
-#########################
-rm -rf ${ASTRACONF} ${SYSCONF}
-rm -rf ${TMPDIR}/channels_backup_by_"* astra-* bbc_pmt_v6*
-
-#########################
+rm -rf $ASTRAPATH
+rm -f $BINPATH/bbc_pmt_starter.sh
+rm -f $BINPATH/bbc_pmt_v6.py
+rm -f $BINPATH/enigma2_pre_start.sh
+########BINPATH#################
 echo
 set -e
 echo "Downloading And Insalling Channel Please Wait ......"
-wget $MY_URL/channels_backup_by_tarek-ashry.tar.gz -qP $TMPDIR
-tar -zxf $TMPDIR/channels_backup_by_tarek-ashry.tar.gz -C /
-sleep 5
+  wget $MY_URL/${PACKAGE}_${VERSION}.tar.gz -qP $TMPDIR
+tar -zxf $TMPDIR/${PACKAGE}_${VERSION}.tar.gz -C /
+sleep 4
 set +e
 echo
 echo "   >>>>   Reloading Services - Please Wait   <<<<"
@@ -104,62 +78,33 @@ if [ -f $BBCPMT ] && [ -f $BBCPY ] && [ -f $BBCENIGMA ]; then
 else
     set -e
     echo "Downloading And Insalling Config BBC Please Wait ......"
+ if which dpkg > /dev/null 2>&1; then
     wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
-    tar -xzf $TMPDIR/bbc_pmt_v6.tar.gz -C $TMPDIR
+    tar -xzf $TMPDIR/bbc_pmt_v6.tar.gz -C
     set +e
-    chmod -R 755 ${TMPDIR}/bbc_pmt_v6
+chmod -R 755 $BINPATH/bbc_pmt_starter.sh
+chmod -R 755 $BINPATH/bbc_pmt_v6.py
+chmod -R 755 $BINPATH/enigma2_pre_start.sh
     sleep 1
     echo "---------------------------------------------"
-    if [ ! -f $BBCPMT ]; then
-        cp -f $CONFIGpmttmp $BINPATH >/dev/null 2>&1
-        echo "[send (bbc_pmt_starter.sh) file]"
-    fi
-    if [ ! -f $BBCPY ]; then
-        cp -f $CONFIGpytmp $BINPATH >/dev/null 2>&1
-        echo "[send (bbc_pmt_v6.py) file]"
-    fi
-    if [ ! -f $BBCENIGMA ]; then
-        cp -f $CONFIGentmp $BINPATH >/dev/null 2>&1
-        echo "[send (enigma2_pre_start.sh) file]"
-    fi
     echo "---------------------------------------------"
-fi
-
 #########################
 if [ $OSTYPE = "Opensource" ]; then
-    if [ -f $ASTRACONF ] && [ -f $ABERTISBIN ] && [ -f $SYSCONF ]; then
-        echo "   >>>>   All Config $PACKAGE Files found   <<<<"
-        sleep 2
-    else
-        set -e
-        echo "Downloading Config $PACKAGE Please Wait ......"
-        wget $MY_URL/astra-"${plarform}".tar.gz -qP $TMPDIR
-        tar -xzf $TMPDIR/astra-"${plarform}".tar.gz -C $TMPDIR
+  wget $MY_URL/astra-mips.tar.gz -qP $TMPDIR
+ tar -xzf $TMPDIR/astra-mips.tar.gz -C
+ else
+ wget $MY_URL/astra-arm.tar.gz -qp 
+$TMPDIR
+ tar -xzf $TMPDIR/astra-arm.tar.gz -C
         set +e
-        chmod -R 755 ${TMPDIR}/${PACKAGE}
+        chmod -R 755 $ASTRAPATH/*
         sleep 1
         echo "---------------------------------------------"
-        if [ ! -f $SYSCONF ]; then
-            cp -f $CONFIGsysctltmp $ETCPATH >/dev/null 2>&1
-            echo "[send (sysctl.conf) file]"
-        fi
-        if [ ! -f $ASTRACONF ]; then
-            cp -f $CONFIGastratmp $ASTRAPATH >/dev/null 2>&1
-            echo "[send (astra.conf) file]"
-        fi
-        if [ ! -f $ABERTISBIN ]; then
-            cp -f $CONFIGabertistmp $ASTRAPATH/scripts >/dev/null 2>&1
-            echo "[send (abertis) file]"
-        fi
-        echo "---------------------------------------------"
-    fi
-fi
-
+  echo "[send (abertis) file]"
+        
+  echo "---------------------------------------------"
 #########################
-rm -rf ${TMPDIR}/channels_backup_by_Emil-Nabil.tar.gz
-rm -rf ${TMPDIR}/* astra-
-rm -rf ${TMPDIR}/* bbc_pmt_v6
-
+rm -rf ${TMPDIR}/*.tar.gz
 sync
 echo ""
 echo ""
@@ -181,6 +126,17 @@ else
 fi
 
 exit 0
+
+
+
+
+
+
+
+
+
+
+
 
 
 
