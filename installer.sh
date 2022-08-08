@@ -36,11 +36,18 @@ CONFIGastratmp=${TMPDIR}/${PACKAGE}/astra.conf
 CONFIGabertistmp=${TMPDIR}/${PACKAGE}/abertis
 
 ########################
+Image Checking  #
 if [ -f /etc/opkg/opkg.conf ]; then
-    STATUS='/var/lib/opkg/status'
     OSTYPE='Opensource'
     OPKG='opkg update'
     OPKGINSTAL='opkg install'
+    OPKGLIST='opkg list-installed'
+elif [ -f /etc/apt/apt.conf ]; then
+    OSTYPE='DreamOS'
+    OPKG='apt-get update'
+    OPKGINSTAL='apt-get install'
+    OPKGLIST='apt-get list-installed'
+    DPKINSTALL='dpkg -i --force-overwrite'
 fi
 echo " remove old channel "
 ########################
@@ -71,12 +78,10 @@ wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 >/dev/null 2>&1
 sleep 2
 echo
 echo "Downloading And Insalling Config BBC Please wait "
-cd /tmp
-wget $MY_URL/bbc_pmt_v6.tar.gz
+wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
 wait
-tar -xzf bbc_pmt_v6.tar.gz -C /
+tar -xzf /tmp/bbc_pmt_v6.tar.gz -C /
 wait
-cd ..
 echo "---------------------------------------------"
 if [ $OSTYPE = "Opensource" ]; then
   wget $MY_URL/astra-arm.tar.gz -qP $TMPDIR
@@ -114,6 +119,7 @@ else
 fi
 
 exit 0
+
 
 
 
