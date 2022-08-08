@@ -81,9 +81,9 @@ set +e
 chmod -R 755 $BINPATH/bbc_pmt_starter.sh
 chmod -R 755 $BINPATH/bbc_pmt_v6.py
 chmod -R 755 $BINPATH/enigma2_pre_start.sh
-    sleep 1
-    echo "---------------------------------------------"
-    echo "---------------------------------------------"
+sleep 1;
+echo "---------------------------------------------"
+echo "---------------------------------------------"
 #########################
 if [ $OSTYPE = "Opensource" ]; then
   wget $MY_URL/astra-arm.tar.gz -qP $TMPDIR
@@ -119,12 +119,13 @@ echo "*********************************************************"
 sleep 2
 
 if [ $OSTYPE = "Opensource" ]; then
-    init 6
+    reboot
 else
     systemctl restart enigma2
 fi
 
 exit 0
+
 
 
 
