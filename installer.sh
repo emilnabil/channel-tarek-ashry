@@ -1,96 +1,69 @@
-#!/bin/sh
-# ###########################################
-# SCRIPT : DOWNLOAD AND INSTALL Channel
-# ###########################################
-#
-# Command: wget https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main/installer.sh -qO - | /bin/sh
-#
-# ###########################################
-
-###########################################
-# Configure where we can find things here #
-VERSION='2022-08-07'
-TMPDIR='/tmp'
-PACKAGE='channels_backup_by_tarek-ashry'
-MY_URL='https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main'
-
-########################
-########################
-BINPATH=/usr/bin
-ETCPATH=/etc
-######
-BBCPMT=${BINPATH}/bbc_pmt_starter.sh
-BBCPY=${BINPATH}/bbc_pmt_v6.py
-BBCENIGMA=${BINPATH}/enigma2_pre_start.sh
-######
-SYSCONF=${ETCPATH}/sysctl.conf
-ASTRACONF=${ASTRAPATH}/astra.conf
-ABERTISBIN=${ASTRAPATH}/scripts/abertis
-
-########################
-CONFIGpmttmp=${TMPDIR}/bbc_pmt_v6/bbc_pmt_starter.sh
-CONFIGpytmp=${TMPDIR}/bbc_pmt_v6/bbc_pmt_v6.py
-CONFIGentmp=${TMPDIR}/bbc_pmt_v6/enigma2_pre_start.sh
-CONFIGsysctltmp=${TMPDIR}/${PACKAGE}/sysctl.conf
-CONFIGastratmp=${TMPDIR}/${PACKAGE}/astra.conf
-CONFIGabertistmp=${TMPDIR}/${PACKAGE}/abertis
-
-########################
-Image Checking  #
-if [ -f /etc/opkg/opkg.conf ]; then
-    OSTYPE='Opensource'
-    OPKG='opkg update'
-    OPKGINSTAL='opkg install'
-    OPKGLIST='opkg list-installed'
-elif [ -f /etc/apt/apt.conf ]; then
-    OSTYPE='DreamOS'
-    OPKG='apt-get update'
-    OPKGINSTAL='apt-get install'
-    OPKGLIST='apt-get list-installed'
-    DPKINSTALL='dpkg -i --force-overwrite'
-fi
+#!/bin/sh # 
+ # # Command: wget https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main/installer.sh -qO - | /bin/sh # # ########################################### ###########################################
+VERSION="2022-08-07"  
+MY_URL="https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main"  
+echo "******************************************************************************************************************"
+echo "    download and install channel  "
+echo "============================================================================================================================="
 echo " remove old channel "
-########################
-rm -rf /etc/enigma2/lamedb
-rm -rf /etc/enigma2/*list
-rm -rf /etc/enigma2/*.tv
-rm -rf /etc/enigma2/*.radio
-rm -rf /etc/tuxbox/*.xml
-
-########################
-########################
-#########################
-echo
-set -e
-echo "Downloading And Insalling Channel Please Wait ......"
-  wget $MY_URL/${PACKAGE}_${VERSION}.tar.gz -qP $TMPDIR
-tar -zxf $TMPDIR/${PACKAGE}_${VERSION}.tar.gz -C /
-sleep 4
-set +e
-echo
+# Remove any Channel  # 
+rm -rf /etc/enigma2/lamedb 
+rm -rf /etc/enigma2/*list 
+rm -rf /etc/enigma2/*.tv 
+rm -rf /etc/enigma2/*.radio 
+rm -rf /etc/tuxbox/*.xml 
+#####################################################################################
+echo "         install channel    "
+cd /tmp
+set -e 
+wget -q  "https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main/channels_backup_by_tarek-ashry_2022-08-07.tar.gz"
+wait
+tar -xzf channels_backup_by_tarek-ashry_2022-08-07.tar.gz  -C /
+wait
 echo "   >>>>   Reloading Services - Please Wait   <<<<"
 wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 >/dev/null 2>&1
 sleep 2
-wait
-echo "---------------------------------------------"
-if [ $OSTYPE = "Opensource" ]; then
-  wget $MY_URL/astra-arm.tar.gz -qP $TMPDIR
- tar -xzf $TMPDIR/astra-arm.tar.gz -C /
- else
- wget $MY_URL/astra-mips.tar.gz -qp 
-$TMPDIR
- tar -xzf $TMPDIR/astra-mips.tar.gz -C /
-set +e
-sleep 1;
-        echo "---------------------------------------------"
-echo "---------------------------------------------"
-sleep 2;
-echo " tmp cleaner "
-cd /tmp
-rm -rf * > /dev/null 2>&1
 cd ..
+set +e
+rm -f /tmp/channels_backup_by_tarek-ashry_2022-08-07.tar.gz
+sleep 2;
+echo "" 
+echo "Installing astra sm patch - dvbsnoop "
+opkg install astra-sm 
+opkg install dvbsnoop
+sleep 1
+cd /tmp
+set -e
+wget
+"https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main/astra-arm.tar.gz"
+wait
+tar -xzf astra-arm.tar.gz  -C /
+wait
+cd ..
+set +e
+rm -f /tmp/astra-arm.tar.gz
+rm /etc/astra/astra.conf
+wait
+wget https://raw.githubusercontent.com/ciefp/astra.conf/main/astra.conf -P /etc/astra/ && chmod 755 /etc/astra/astra.conf
+chmod 755 /etc/astra/scripts/abertis
+sleep 1
+cd /tmp
+set -e
+wget
+"wget https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main/bbc_pmt_v6.tar.gz"
+wait
+tar -xzf bbc_pmt_v6.tar.gz  -C /
+wait
+cd ..
+set +e
+rm -f /tmp/bbc_pmt_v6.tar.gz
+sleep 1
+
+ wait   
 echo ""
 echo ""
+echo "" 
+echo "****************************************************************************************************************************"
 echo "*********************************************************"
 echo "#       Channel And Config INSTALLED SUCCESSFULLY       #"
 echo "   UPLOADED BY  >>>>   EMIL_NABIL "   
@@ -103,18 +76,12 @@ echo "*********************************************************"
 sleep 2
 
 if [ $OSTYPE = "Opensource" ]; then
-    reboot
+    init 6
 else
     systemctl restart enigma2
 fi
 
 exit 0
-
-
-
-
-
-
 
 
 
