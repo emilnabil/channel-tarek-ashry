@@ -75,8 +75,6 @@ wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
 wait
 tar -xzf /tmp/bbc_pmt_v6.tar.gz -C /
 wait
-chmod -R 755 $BINPATH/bbc_pmt_starter.sh
-chmod -R 755 $BINPATH/bbc_pmt_v6.py
 echo "---------------------------------------------"
 if [ $OSTYPE = "Opensource" ]; then
   wget $MY_URL/astra-arm.tar.gz -qP $TMPDIR
