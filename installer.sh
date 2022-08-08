@@ -71,10 +71,12 @@ wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 >/dev/null 2>&1
 sleep 2
 echo
 echo "Downloading And Insalling Config BBC Please wait "
-wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
+cd /tmp
+wget $MY_URL/bbc_pmt_v6.tar.gz
 wait
-tar -xzf /tmp/bbc_pmt_v6.tar.gz -C /
+tar -xzf bbc_pmt_v6.tar.gz -C /
 wait
+cd ..
 echo "---------------------------------------------"
 if [ $OSTYPE = "Opensource" ]; then
   wget $MY_URL/astra-arm.tar.gz -qP $TMPDIR
