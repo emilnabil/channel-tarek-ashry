@@ -70,19 +70,14 @@ echo "   >>>>   Reloading Services - Please Wait   <<<<"
 wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 >/dev/null 2>&1
 sleep 2
 echo
-
-#########################
-    sleep 2;
-    echo "Downloading And Insalling Config BBC Please wait "
-    wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
+echo "Downloading And Insalling Config BBC Please wait "
+wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
 wait
 tar -xzf /tmp/bbc_pmt_v6.tar.gz -C /
 wait
 chmod -R 755 $BINPATH/bbc_pmt_starter.sh
 chmod -R 755 $BINPATH/bbc_pmt_v6.py
-chmod -R 755 $BINPATH/enigma2_pre_start.sh
-sleep 1;
-echo "---------------------------------------------"
+chmod -R 755 $BINPATH/enigma2_pre_start.s
 echo "---------------------------------------------"
 if [ $OSTYPE = "Opensource" ]; then
   wget $MY_URL/astra-arm.tar.gz -qP $TMPDIR
@@ -101,7 +96,6 @@ echo " tmp cleaner "
 cd /tmp
 rm -rf * > /dev/null 2>&1
 cd ..
-sync
 echo ""
 echo ""
 echo "*********************************************************"
@@ -122,6 +116,7 @@ else
 fi
 
 exit 0
+
 
 
 
