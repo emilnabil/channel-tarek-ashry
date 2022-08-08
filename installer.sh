@@ -76,8 +76,8 @@ echo
     set -e
     echo "Downloading And Insalling Config BBC Please wait "
     wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
-    tar -xzf $TMPDIR/bbc_pmt_v6.tar.gz -C
-    set +e
+tar -xzf $TMPDIR/bbc_pmt_v6.tar.gz -C /
+set +e
 chmod -R 755 $BINPATH/bbc_pmt_starter.sh
 chmod -R 755 $BINPATH/bbc_pmt_v6.py
 chmod -R 755 $BINPATH/enigma2_pre_start.sh
@@ -87,11 +87,11 @@ chmod -R 755 $BINPATH/enigma2_pre_start.sh
 #########################
 if [ $OSTYPE = "Opensource" ]; then
   wget $MY_URL/astra-arm.tar.gz -qP $TMPDIR
- tar -xzf $TMPDIR/astra-arm.tar.gz -C
+ tar -xzf $TMPDIR/astra-arm.tar.gz -C /
  else
  wget $MY_URL/astra-mips.tar.gz -qp 
 $TMPDIR
- tar -xzf $TMPDIR/astra-mips.tar.gz -C
+ tar -xzf $TMPDIR/astra-mips.tar.gz -C /
         set +e
         chmod -R 755 $ASTRAPATH/*
         sleep 1
@@ -99,8 +99,11 @@ $TMPDIR
   echo "[send (abertis) file]"
         
   echo "---------------------------------------------"
-#########################
-rm -rf ${TMPDIR}/*.tar
+sleep 2;
+echo " tmp cleaner "
+cd /tmp
+rm -rf * > /dev/null 2>&1
+cd ..
 sync
 echo ""
 echo ""
@@ -122,6 +125,9 @@ else
 fi
 
 exit 0
+
+
+
 
 
 
