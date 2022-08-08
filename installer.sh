@@ -73,12 +73,11 @@ echo
 
 #########################
     sleep 2;
-    set -e
     echo "Downloading And Insalling Config BBC Please wait "
     wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
+wait
 tar -xzf /tmp/bbc_pmt_v6.tar.gz -C /
 wait
-set +e
 chmod -R 755 $BINPATH/bbc_pmt_starter.sh
 chmod -R 755 $BINPATH/bbc_pmt_v6.py
 chmod -R 755 $BINPATH/enigma2_pre_start.sh
