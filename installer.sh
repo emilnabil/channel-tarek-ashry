@@ -77,7 +77,6 @@ tar -xzf /tmp/bbc_pmt_v6.tar.gz -C /
 wait
 chmod -R 755 $BINPATH/bbc_pmt_starter.sh
 chmod -R 755 $BINPATH/bbc_pmt_v6.py
-chmod -R 755 $BINPATH/enigma2_pre_start.sh
 echo "---------------------------------------------"
 if [ $OSTYPE = "Opensource" ]; then
   wget $MY_URL/astra-arm.tar.gz -qP $TMPDIR
