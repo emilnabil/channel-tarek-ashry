@@ -9,7 +9,7 @@
 
 ###########################################
 # Configure where we can find things here #
-VERSION='2022-08-07'
+VERSION='2022-09-10'
 TMPDIR='/tmp'
 PACKAGE='astra-sm'
 MY_PACKAGE='channels_backup_by_tarek-ashry'
@@ -183,6 +183,7 @@ else
 fi
 
 exit 0
+
 
 
 
