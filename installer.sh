@@ -9,10 +9,8 @@
 
 ###########################################
 # Configure where we can find things here #
-VERSION='2022-09-10'
 TMPDIR='/tmp'
 PACKAGE='astra-sm'
-MY_PACKAGE='channels_backup_by_tarek-ashry'
 MY_URL='https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main'
 
 ########################
@@ -83,14 +81,14 @@ esac
 
 #########################
 rm -rf ${ASTRACONF} ${SYSCONF}
-rm -rf ${TMPDIR}/channels_backup_user_"${VERSION}"* astra-* bbc_pmt_v6*
+rm -rf ${TMPDIR}/channels_backup_by_"* astra-* bbc_pmt_v6*
 
 #########################
 echo
 set -e
-echo "Downloading And Insallling Channel Please Wait ......"
-wget $MY_URL/${MY_PACKAGE}_${VERSION}.tar.gz -qP $TMPDIR
-tar -zxf $TMPDIR/${MY_PACKAGE}_${VERSION}.tar.gz -C /
+echo "Downloading And Insalling Channel Please Wait ......"
+wget $MY_URL/channels_backup_by_tarek-ashry.tar.gz -qP $TMPDIR
+tar -zxf $TMPDIR/channels_backup_by_tarek-ashry.tar.gz -C /
 sleep 5
 set +e
 echo
@@ -105,7 +103,7 @@ if [ -f $BBCPMT ] && [ -f $BBCPY ] && [ -f $BBCENIGMA ]; then
     sleep 2
 else
     set -e
-    echo "Downloading And Insallling Config BBC Please Wait ......"
+    echo "Downloading And Insalling Config BBC Please Wait ......"
     wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
     tar -xzf $TMPDIR/bbc_pmt_v6.tar.gz -C $TMPDIR
     set +e
@@ -158,7 +156,7 @@ if [ $OSTYPE = "Opensource" ]; then
 fi
 
 #########################
-rm -rf ${TMPDIR}/channels_backup_by_tarek-ashry_2022-08-07.tar.gz
+rm -rf ${TMPDIR}/channels_backup_by_tarek-ashry.tar.gz
 rm -rf ${TMPDIR}/* astra-
 rm -rf ${TMPDIR}/* bbc_pmt_v6
 
@@ -183,8 +181,6 @@ else
 fi
 
 exit 0
-
-
 
 
 
