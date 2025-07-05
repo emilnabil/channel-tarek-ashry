@@ -1,4 +1,149 @@
-z="
-";uCz='{PAC';LHz='CKAG';vHz='le]"';xEz=' pla';JDz='/var';oDz='dio';HCz='pts/';rBz='l.co';KJz='ur D';MFz='RACO';KIz='onf)';oCz='astr';AEz='kage';nBz='${ET';IIz='(ast';CIz='ratm';PJz='RT N';HIz='2>&1';cBz='BBCE';TFz='ckup';pz='ION=';PGz='f $B';BJz='L_NA';MCz='ttmp';yEz='rfor';HJz='   $';Rz='AGE=';lHz='mp $';XCz='t_v6';wz='| cu';KCz='CONF';IJz='}   ';hCz='trat';gDz='enig';nDz='*.ra';gCz='IGas';tEz=' -m)';Dz='T : ';KBz='H=${';VCz='${TM';TIz='TH/s';fCz='conf';LIz=' fil';jIz=' "# ';JJz='  yo';lCz='/${P';wCz='}/ab';wFz='_by_';MBz='/ast';QHz='"';SGz='& [ ';dHz='YSCO';sFz='.."';XHz='-qP ';Uz='m'\''';JCz='tis';LGz='$BBC';PIz='N ];';fFz=' "Do';nz='main';iHz='ONFI';RHz='ra-"';cIz='/* a';REz='all ';vCz='KAGE';rGz='---"';kEz='snoo';FBz='/bin';bEz='r';HEz='G >/';iEz='i in';Vz='MY_U';CJz='BIL ';tHz='(sys';uIz=' UPL';DDz='kg.c';DHz='File';ZHz='DIR';WCz='PDIR';SIz='tmp ';cEz='}';CHz='AGE ';xHz='STRA';FIz='ev/n';oFz='Plea';pEz='done';DCz='{AST';cDz='fi';Oz='/tmp';WDz='e'\''';PHz='t ..';yCz='if [';AIz='then';FCz='TH}/';IGz='+e';qGz='----';Yz='s://';mEz='GE; ';OEz='>   ';ZIz='&1';DEz='TATU';kGz='chmo';OGz=' [ -';dGz='nd  ';aBz='_v6.';MIz='e]"';xz='t -d';uEz=' in';uHz=') fi';RCz='mt_v';QBz='{BIN';pBz='H}/s';GCz='scri';gz='ilna';KHz=' $PA';DIz='p $A';vIz='OADE';mDz='*.tv';gIz=' "**';jz='nel-';MGz='PMT ';QJz='ow  ';eDz='rf /';hFz='adin';SBz='}/bb';YFz='}"* ';dDz='rm -';XDz='INST';kCz='DIR}';LJz='evic';nIz='l An';ez='t.co';jGz='R';WFz='{VER';wEz='7l*)';sz='RL/v';jDz='db';NEz=' >>>';lz='k-as';aJz='exit';OFz='${SY';YJz='igma';qBz='ysct';sGz='$AST';hEz='for ';gEz='ce" ';TBz='c_pm';eEz='TYPE';IFz='s" ;';BDz='/opk';ACz='ABER';rDz='.xml';GFz='orm=';TEz=' <<<';eHz='; th';WIz='/dev';uGz=' && ';YIz='l 2>';GIz='ull ';NHz='ease';HHz='<<"';ZDz='opkg';NFz='NF} ';CEz='" $S';YHz='$TMP';iCz='mp=$';LCz='IGpm';AJz=' EMI';MHz='E Pl';MDz='atus';MJz='e wi';lIz='  Ch';jFz='d In';FHz='und ';ZBz='_pmt';DFz='mips';KFz='esac';EIz=' >/d';bz='ubus';hDz='ma2/';JGz=' ""';lEz='p $P';rHz=' "[s';OHz=' Wai';KEz=' 2>&';UFz='_use';jHz='Gsys';mHz='ATH ';vEz='armv';jCz='{TMP';xFz='hry.';lFz='ing ';VGz=' the';jEz=' dvb';UJz='emct';aGz='BC F';bJz=' 0';XJz='t en';ZFz='a-* ';AHz='ONF ';EFz='*) p';wIz='D BY';eGz='ling';EJz=' '\''==';CFz=';;';ZCz='IGsy';Qz='PACK';PDz='Open';mIz='anne';SHz='${pl';pIz='ED S';XFz='SION';AGz='gz -';dEz=' $OS';lDz='t';DBz='ATH=';oHz='v/nu';YCz='IGen';sEz='name';VDz='pdat';Bz=' " S';LFz='rf $';qCz='IGab';xDz='-qs ';eBz='A=${';rz='et $';vBz='H}/a';GJz='==='\''';lBz='SYSC';tz='ersi';wGz=' $AB';xCz='s';YDz='AL='\''';DJz='p 4;';NDz='OSTY';RDz='ce'\''';tBz='ACON';rFz='....';NJz='ll R';VHz='.tar';THz='arfo';TCz='IGpy';bHz=' ! -';XGz='All ';CDz='g/op';nCz='GE}/';aCz='sctl';CCz='IN=$';SJz=' 6';KGz='p 2';hGz='BBC ';mBz='ONF=';aHz='-C $';UHz='rm}"';VEz='GINS';OJz='ESTA';dz='nten';cFz='v6*';IEz='dev/';DGz='tar ';MEz=' "  ';TJz='syst';iDz='lame';tGz='NF ]';QGz='BCPY';az='gith';iIz='***"';VBz='arte';mGz=' 755';UIz='crip';oEz='$i';uFz=' $MY';wBz='stra';SFz='s_ba';ADz=' -f ';wDz='rep ';GHz='  <<';NIz='BERT';Wz='RL='\''';JIz='ra.c';PEz='Need';cz='erco';VIz='ts >';VJz='l re';yz=' "="';BHz='ig $';LDz='g/st';Pz=''\''';WEz='TAL ';Iz='TALL';eFz='-e';sHz='end ';sBz='nf';QCz='bc_p';SEz='$1  ';yHz=' ]; ';pGz=' "--';OBz='BBCP';EGz='-xzf';GBz='ETCP';HFz='"mip';vDz='if g';WHz='.gz ';qFz='ait ';PBz='MT=$';uz='on -';oIz='d Co';CGz='IR';YGz='Conf';qz='$(wg';nEz='do';bGz='iles';ICz='aber';Jz=' Cha';BIz='Gast';vz='qO- ';TGz='-f $';QIz='Gabe';ZGz='ig B';YBz='/bbc';oz='VERS';BFz='rm" ';rIz='SSFU';eCz='ctl.';eIz='/* b';oBz='CPAT';Nz='IR='\''';XBz='Y=${';IBz='ASTR';yGz='SBIN';OIz='ISBI';bCz='}/${';iz='chan';wHz='f $A';bIz='gz';jBz='rt.s';NBz='ra';JBz='APAT';UBz='t_st';KDz='/lib';qIz='UCCE';BEz=': $1';vFz='_URL';aFz='bbc_';BCz='TISB';aDz=' ins';tDz='all(';qDz='ox/*';SDz='OPKG';UCz='tmp=';gBz='gma2';fDz='etc/';hBz='_pre';uBz='F=${';fEz=' = "';ABz=' -f2';ECz='RAPA';pCz='a.co';Sz=''\''ast';ZEz='p 1';RJz='init';Cz='CRIP';hz='bil/';FGz=' $TM';bBz='py';UEz='<"';gHz='cp -';PFz='SCON';hIz='****';RFz='/cha';fBz='/eni';gFz='wnlo';nFz='nel ';mz='hry/';kDz='*lis';ODz='PE='\''';xIz='  >>';pFz='se W';cHz='f $S';RIz='rtis';Hz=' INS';oGz='6';sCz='stmp';Kz='nnel';dIz='-';Fz='LOAD';UDz='kg u';IHz='g Co';yDz='"Pac';GGz='C /';fHz='en';lGz='d -R';kz='tare';FEz='else';BGz='qP $';hHz='f $C';FDz=']; t';pHz='ll 2';VFz='r_"$';Gz=' AND';FJz='====';cGz=' fou';dCz='/sys';GDz='hen';Lz='s "';HGz='p 5';GEz='$OPK';Xz='http';RGz=' ] &';dBz='NIGM';iFz='g An';rCz='erti';xGz='ERTI';kFz='sall';QFz='F}';dFz='set ';WJz='star';WGz='n';UGz='A ];';JFz=';';HBz='/etc';tFz='wget';OCz='MPDI';tIz='  #"';pDz='tuxb';QDz='sour';LEz='1';fz='m/em';SCz='6/bb';gGz='fig ';WBz='r.sh';mFz='Chan';EHz='s fo';RBz='PATH';aEz='clea';cCz='AGE}';fGz=' Con';kIz='    ';sDz='inst';vGz='[ -f';JEz='null';kBz='h';TDz='='\''op';bDz='tall';CBz='BINP';YEz='slee';rEz=' $(u';NGz='] &&';EDz='onf ';QEz=' to ';nGz=' ${T';yIz='>>  ';iBz='_sta';JHz='nfig';NCz='=${T';mCz='ACKA';Mz='TMPD';ZJz='2';FFz='larf';IDz='US='\''';XIz='/nul';yFz='tar.';LBz='ATH}';Az='echo';qEz='case';iGz='C $T';kHz='ctlt';tCz='R}/$';EBz='/usr';bFz='pmt_';HDz='STAT';Ez='DOWN';PCz='R}/b';uDz=') {';yBz='f';XEz='"$1"';qHz='>&1';sIz='LLY ';AFz='m="a';xBz='.con';BBz='-)';nHz='>/de';fIz='sync';aIz='(abe';EEz='S; t';Zz='raw.';Tz='ra-s';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$Kz$Lz$z$Mz$Nz$Oz$Pz$z$Qz$Rz$Sz$Tz$Uz$z$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$hz$iz$jz$kz$lz$mz$nz$Pz$z$oz$pz$qz$rz$Vz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$z$CBz$DBz$EBz$FBz$z$GBz$DBz$HBz$z$IBz$JBz$KBz$GBz$LBz$MBz$NBz$z$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$z$OBz$XBz$CBz$LBz$YBz$ZBz$aBz$bBz$z$cBz$dBz$eBz$CBz$LBz$fBz$gBz$hBz$iBz$jBz$kBz$z$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$z$IBz$tBz$uBz$IBz$JBz$vBz$wBz$xBz$yBz$z$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$z$KCz$LCz$MCz$NCz$OCz$PCz$QCz$RCz$SCz$TBz$UBz$VBz$WBz$z$KCz$TCz$UCz$VCz$WCz$SBz$TBz$XCz$YBz$ZBz$aBz$bBz$z$KCz$YCz$UCz$VCz$WCz$SBz$TBz$XCz$fBz$gBz$hBz$iBz$jBz$kBz$z$KCz$ZCz$aCz$UCz$VCz$WCz$bCz$Qz$cCz$dCz$eCz$fCz$z$KCz$gCz$hCz$iCz$jCz$kCz$lCz$mCz$nCz$oCz$pCz$sBz$z$KCz$qCz$rCz$sCz$NCz$OCz$tCz$uCz$vCz$wCz$rCz$xCz$z$yCz$ADz$HBz$BDz$CDz$DDz$EDz$FDz$GDz$z$HDz$IDz$JDz$KDz$BDz$LDz$MDz$Pz$z$NDz$ODz$PDz$QDz$RDz$z$SDz$TDz$UDz$VDz$WDz$z$SDz$XDz$YDz$ZDz$aDz$bDz$Pz$z$cDz$z$dDz$eDz$fDz$gDz$hDz$iDz$jDz$z$dDz$eDz$fDz$gDz$hDz$kDz$lDz$z$dDz$eDz$fDz$gDz$hDz$mDz$z$dDz$eDz$fDz$gDz$hDz$nDz$oDz$z$dDz$eDz$fDz$pDz$qDz$rDz$z$sDz$tDz$uDz$z$vDz$wDz$xDz$yDz$AEz$BEz$CEz$DEz$EEz$GDz$z$Az$z$FEz$z$GEz$HEz$IEz$JEz$KEz$LEz$z$Az$MEz$NEz$OEz$PEz$QEz$sDz$REz$SEz$TEz$UEz$z$Az$z$GEz$VEz$WEz$XEz$z$YEz$ZEz$z$aEz$bEz$z$cDz$z$cEz$z$yCz$dEz$eEz$fEz$PDz$QDz$gEz$FDz$GDz$z$hEz$iEz$jEz$kEz$lEz$mCz$mEz$nEz$z$sDz$REz$oEz$z$pEz$z$cDz$z$qEz$rEz$sEz$tEz$uEz$z$vEz$wEz$xEz$yEz$AFz$BFz$CFz$z$DFz$EFz$FFz$GFz$HFz$IFz$JFz$z$KFz$z$dDz$LFz$DCz$MFz$NFz$OFz$PFz$QFz$z$dDz$LFz$jCz$kCz$RFz$Kz$SFz$TFz$UFz$VFz$WFz$XFz$YFz$oCz$ZFz$aFz$bFz$cFz$z$Az$z$dFz$eFz$z$Az$fFz$gFz$hFz$iFz$jFz$kFz$lFz$mFz$nFz$oFz$pFz$qFz$rFz$sFz$z$tFz$uFz$vFz$RFz$Kz$SFz$TFz$wFz$kz$lz$xFz$yFz$AGz$BGz$Mz$CGz$z$DGz$EGz$FGz$WCz$RFz$Kz$SFz$TFz$wFz$kz$lz$xFz$yFz$AGz$GGz$z$YEz$HGz$z$dFz$IGz$z$Az$JGz$z$YEz$KGz$z$Az$JGz$z$yCz$ADz$LGz$MGz$NGz$OGz$PGz$QGz$RGz$SGz$TGz$cBz$dBz$UGz$VGz$WGz$z$Az$MEz$NEz$OEz$XGz$YGz$ZGz$aGz$bGz$cGz$dGz$TEz$UEz$z$YEz$KGz$z$FEz$z$dFz$eFz$z$Az$fFz$gFz$hFz$iFz$jFz$kFz$eGz$fGz$gGz$hGz$oFz$pFz$qFz$rFz$sFz$z$tFz$uFz$vFz$YBz$ZBz$aBz$yFz$AGz$BGz$Mz$CGz$z$DGz$EGz$FGz$WCz$YBz$ZBz$aBz$yFz$AGz$iGz$OCz$jGz$z$dFz$IGz$z$kGz$lGz$mGz$nGz$OCz$PCz$QCz$RCz$oGz$z$YEz$ZEz$z$Az$pGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$rGz$z$Az$pGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$rGz$z$cDz$z$yCz$dEz$eEz$fEz$PDz$QDz$gEz$FDz$GDz$z$yCz$ADz$sGz$MFz$tGz$uGz$vGz$wGz$xGz$yGz$RGz$SGz$TGz$lBz$AHz$FDz$GDz$z$Az$MEz$NEz$OEz$XGz$YGz$BHz$Qz$CHz$DHz$EHz$FHz$GHz$HHz$z$YEz$KGz$z$FEz$z$dFz$eFz$z$Az$fFz$gFz$hFz$IHz$JHz$KHz$LHz$MHz$NHz$OHz$PHz$rFz$QHz$z$tFz$uFz$vFz$MBz$RHz$SHz$THz$UHz$VHz$WHz$XHz$YHz$ZHz$z$DGz$EGz$FGz$WCz$MBz$RHz$SHz$THz$UHz$VHz$WHz$aHz$Mz$CGz$z$dFz$IGz$z$kGz$lGz$mGz$nGz$OCz$tCz$uCz$vCz$cEz$z$YEz$ZEz$z$Az$pGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$rGz$z$yCz$bHz$cHz$dHz$tGz$eHz$fHz$z$gHz$hHz$iHz$jHz$kHz$lHz$GBz$mHz$nHz$oHz$pHz$qHz$z$Az$rHz$sHz$tHz$eCz$fCz$uHz$vHz$z$cDz$z$yCz$bHz$wHz$xHz$KCz$yHz$AIz$z$gHz$hHz$iHz$BIz$CIz$DIz$xHz$RBz$EIz$FIz$GIz$HIz$z$Az$rHz$sHz$IIz$JIz$KIz$LIz$MIz$z$cDz$z$yCz$bHz$wHz$NIz$OIz$PIz$VGz$WGz$z$gHz$hHz$iHz$QIz$RIz$SIz$sGz$ECz$TIz$UIz$VIz$WIz$XIz$YIz$ZIz$z$Az$rHz$sHz$aIz$RIz$uHz$vHz$z$cDz$z$Az$pGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$qGz$rGz$z$cDz$z$cDz$z$dDz$LFz$jCz$kCz$RFz$Kz$SFz$TFz$wFz$kz$lz$xFz$yFz$bIz$z$dDz$LFz$jCz$kCz$cIz$wBz$dIz$z$dDz$LFz$jCz$kCz$eIz$QCz$RCz$oGz$z$fIz$z$Az$JGz$z$Az$JGz$z$Az$gIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$iIz$z$Az$jIz$kIz$lIz$mIz$nIz$oIz$JHz$Hz$Iz$pIz$qIz$rIz$sIz$kIz$tIz$z$Az$MEz$uIz$vIz$wIz$xIz$yIz$AJz$BJz$CJz$QHz$z$YEz$DJz$z$Az$EJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$FJz$GJz$z$Az$jIz$kIz$kIz$kIz$kIz$HJz$WFz$XFz$IJz$kIz$kIz$kIz$kIz$kIz$tIz$z$Az$gIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$iIz$z$Az$jIz$kIz$kIz$JJz$KJz$LJz$MJz$NJz$OJz$PJz$QJz$kIz$kIz$kIz$tIz$z$Az$gIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$hIz$iIz$z$YEz$KGz$z$yCz$dEz$eEz$fEz$PDz$QDz$gEz$FDz$GDz$z$RJz$SJz$z$FEz$z$TJz$UJz$VJz$WJz$XJz$YJz$ZJz$z$cDz$z$aJz$bJz"
+#!/bin/sh
+# ###########################################
+echo " SCRIPT : DOWNLOAD AND INSTALL Channels "
+
+TMPDIR='/tmp'
+PACKAGE='astra-sm'
+MY_URL='https://raw.githubusercontent.com/emilnabil/channel-tarek-ashry/main'
+
+########################
+VERSION=$(wget "$MY_URL/version" -qO- | cut -d "=" -f2-)
+
+########################
+BINPATH="/usr/bin"
+ETCPATH="/etc"
+ASTRAPATH="${ETCPATH}/astra"
+
+BBCPMT="${BINPATH}/bbc_pmt_starter.sh"
+BBCPY="${BINPATH}/bbc_pmt_v6.py"
+BBCENIGMA="${BINPATH}/enigma2_pre_start.sh"
+
+SYSCONF="${ETCPATH}/sysctl.conf"
+ASTRACONF="${ASTRAPATH}/astra.conf"
+ABERTISBIN="${ASTRAPATH}/scripts/abertis"
+
+CONFIGpmttmp="${TMPDIR}/bbc_pmt_v6/bbc_pmt_starter.sh"
+CONFIGpytmp="${TMPDIR}/bbc_pmt_v6/bbc_pmt_v6.py"
+CONFIGentmp="${TMPDIR}/bbc_pmt_v6/enigma2_pre_start.sh"
+CONFIGsysctltmp="${TMPDIR}/${PACKAGE}/sysctl.conf"
+CONFIGastratmp="${TMPDIR}/${PACKAGE}/astra.conf"
+CONFIGabertistmp="${TMPDIR}/${PACKAGE}/abertis"
+
+########################
+if [ -f /etc/opkg/opkg.conf ]; then
+    STATUS="/var/lib/opkg/status"
+    OSTYPE="Opensource"
+    OPKG="opkg update"
+    OPKGINSTAL="opkg install"
+fi
+
+########################
+echo "   >>>>   Removing old channel files   <<<<"
+rm -rf /etc/enigma2/lamedb
+rm -rf /etc/enigma2/*list
+rm -rf /etc/enigma2/*.tv
+rm -rf /etc/enigma2/*.radio
+
+########################
+install() {
+    if grep -qs "Package: $1" "$STATUS"; then
+        echo "   >>>>   $1 already installed   <<<<"
+    else
+        $OPKG >/dev/null 2>&1
+        echo "   >>>>   Installing $1   <<<<"
+        $OPKGINSTAL "$1"
+        sleep 1
+        clear
+    fi
+}
+
+########################
+if [ "$OSTYPE" = "Opensource" ]; then
+    for i in dvbsnoop "$PACKAGE"; do
+        install "$i"
+    done
+fi
+
+########################
+case $(uname -m) in
+    armv7l*) platform="arm" ;;
+    mips*) platform="mips" ;;
+esac
+
+########################
+rm -rf "${ASTRACONF}" "${SYSCONF}"
+rm -rf ${TMPDIR}/channels_backup_user_"${VERSION}"* astra-* bbc_pmt_v6*
+
+########################
+echo
+set -e
+echo "Downloading and installing channels, please wait..."
+wget "$MY_URL/channels_backup_by_tarek-ashry.tar.gz" -qP "$TMPDIR"
+tar -xzf "$TMPDIR/channels_backup_by_tarek-ashry.tar.gz" -C /
+sleep 5
+set +e
+echo ""
+sleep 2
+echo ""
+
+########################
+if [ -f "$BBCPMT" ] && [ -f "$BBCPY" ] && [ -f "$BBCENIGMA" ]; then
+    echo "   >>>>   All BBC config files found   <<<<"
+    sleep 2
+else
+    set -e
+    echo "Downloading and installing BBC config files..."
+    wget "$MY_URL/bbc_pmt_v6.tar.gz" -qP "$TMPDIR"
+    tar -xzf "$TMPDIR/bbc_pmt_v6.tar.gz" -C "$TMPDIR"
+    set +e
+    chmod -R 755 "${TMPDIR}/bbc_pmt_v6"
+    sleep 1
+    echo "---------------------------------------------"
+fi
+
+########################
+if [ "$OSTYPE" = "Opensource" ]; then
+    if [ -f "$ASTRACONF" ] && [ -f "$ABERTISBIN" ] && [ -f "$SYSCONF" ]; then
+        echo "   >>>>   All $PACKAGE config files found   <<<<"
+        sleep 2
+    else
+        set -e
+        echo "Downloading $PACKAGE config files, please wait..."
+        wget "$MY_URL/astra-${platform}.tar.gz" -qP "$TMPDIR"
+        tar -xzf "$TMPDIR/astra-${platform}.tar.gz" -C "$TMPDIR"
+        set +e
+        chmod -R 755 "${TMPDIR}/${PACKAGE}"
+        sleep 1
+        echo "---------------------------------------------"
+        [ ! -f "$SYSCONF" ] && cp -f "$CONFIGsysctltmp" "$ETCPATH" >/dev/null 2>&1 && echo "[send (sysctl.conf) file]"
+        [ ! -f "$ASTRACONF" ] && cp -f "$CONFIGastratmp" "$ASTRAPATH" >/dev/null 2>&1 && echo "[send (astra.conf) file]"
+        [ ! -f "$ABERTISBIN" ] && cp -f "$CONFIGabertistmp" "$ASTRAPATH/scripts" >/dev/null 2>&1 && echo "[send (abertis) file]"
+        echo "---------------------------------------------"
+    fi
+fi
+
+########################
+rm -rf "$TMPDIR/channels_backup_by_tarek-ashry.tar.gz"
+rm -rf ${TMPDIR}/*astra*
+rm -rf ${TMPDIR}/*bbc_pmt_v6*
+
+sync
+echo ""
+echo ""
+echo "*********************************************************"
+echo "#       Channel And Config INSTALLED SUCCESSFULLY       #"
+echo "#           Version: ${VERSION}                         #"
+echo "#       Uploaded by >>> EMIL_NABIL                      #"
+echo "#           Your device will restart now                #"
+echo "*********************************************************"
+sleep 4
+
+if [ "$OSTYPE" = "Opensource" ]; then
+    killall -9 enigma2 
+else
+    systemctl restart enigma2
+fi
+
+exit 0
+
 
